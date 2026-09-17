@@ -46,6 +46,8 @@ public class ItemService {
 
     public List<ItemResponse> listAll (String search) {
 
+        System.out.println("BUSCA RECEBIDA: [" + search + "]");
+
         List<Item> items;
 
         if (search != null && !search.isEmpty()) {
